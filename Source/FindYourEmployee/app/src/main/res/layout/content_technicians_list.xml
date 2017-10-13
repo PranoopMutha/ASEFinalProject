@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.findyourtechnician.technicians_list"
+    tools:showIn="@layout/activity_technicians_list"
+    android:background="@drawable/bgimage1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Employees List"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="105dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/textView4"
+        android:id="@+id/HeaderLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="            Name"
+            android:id="@+id/Technician_List_Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView21" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Technician_List_Name"
+            android:layout_toEndOf="@+id/Technician_List_Name"
+            android:text="          " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Experience"
+            android:id="@+id/Technician_List_Experience"
+            android:layout_toRightOf="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView23" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="          "
+            android:id="@+id/textView23"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Technician_List_Experience"
+            android:layout_toEndOf="@+id/Technician_List_Experience" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Rating"
+            android:id="@+id/Technician_List_BaseFare"
+            android:layout_toEndOf="@+id/Technician_List_Experience"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView25"
+            android:layout_toRightOf="@+id/Technician_List_Experience" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="          "
+            android:id="@+id/textView25"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Technician_List_BaseFare"
+            android:layout_toEndOf="@+id/Technician_List_BaseFare" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="       Base Fare"
+            android:id="@+id/Technician_List_Rating"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView25"
+            android:layout_alignLeft="@+id/textView25"
+            android:layout_alignStart="@+id/textView25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                           "
+            android:id="@+id/textView20"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Technician_List_Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TechnicianlistView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/HeaderLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/CategorytextView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=">"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/CategorytextView"
+        android:layout_toRightOf="@+id/CategorytextView"
+        android:layout_toEndOf="@+id/CategorytextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/SubCategorytextView"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imageView12"
+        android:src="@drawable/fyelogo"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/HeaderLayout" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="sign Out"
+        android:id="@+id/TechnicianSignOut"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#c03622"
+        android:onClick="SignOut" />
+
+</RelativeLayout>

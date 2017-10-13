@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_login">FindYourTechnician</string>
+    <string name="title_activity_user_registration">UserRegistration</string>
+    <string name="title_activity_technician_profile_registration">TechnicianProfileRegistration
+    </string>
+    <string-array name="technicians">
+        <item>Developer</item>
+        <item>Manual Tester</item>
+        <item>Automation Tester></item>
+        <item>Team Lead</item>
+        <item>Support Person</item>
+    </string-array>
+    <string-array name="technicianDescriptions">
+        <item>This is Developer</item>
+        <item>This is Tester</item>
+        <item>This is Team Lead</item>
+        <item>This is Supoort Staff</item>
+    </string-array>
+    <string name="title_activity_technician_details">TechnicianDetails</string>
+    <string name="title_activity_sub_category_page">SubCategoryPage</string>
+    <string-array name="Carpenter_SubCategory">
+        <item>JAVA</item>
+        <item>Angular JS</item>
+        <item>React JS</item>
+        <item>Node JS</item>
+        <item>.Net</item>
+    </string-array>
+    <string-array name="Electrician_SubCategory">
+        <item>JAVA</item>
+        <item>Angular JS</item>
+        <item>React JS</item>
+        <item>Node JS</item>
+        <item>.Net</item>
+    </string-array>
+    <string-array name="Mechanic_SubCategory">
+        <item>JAVA</item>
+        <item>Angular JS</item>
+        <item>React JS</item>
+        <item>Node JS</item>
+        <item>.Net</item>
+    </string-array>
+    <string-array name="Painter_SubCategory">
+        <item>JAVA</item>
+        <item>Angular JS</item>
+        <item>React JS</item>
+        <item>Node JS</item>
+        <item>.Net</item>
+    </string-array>
+    <string-array name="Plumber_SubCategory">
+        <item>JAVA</item>
+        <item>Angular JS</item>
+        <item>React JS</item>
+        <item>Node JS</item>
+        <item>.Net</item>
+    </string-array>
+    <string name="title_activity_technician_experience_registration">
+        technician_experience_registration
+    </string>
+    <string name="title_activity_technician_registration_step2">technician_registration_step2
+    </string>
+    <string name="title_activity_technicians_list">technicians_list</string>
+    <string name="title_activity_technician_profile_registration2">
+        technician_profile_registration2
+    </string>
+    <string-array name="Technician_names">
+        <item>John Doe</item>
+        <item>Mark Phillips</item>
+        <item>Kevin Parker</item>
+        <item>Jeff Adams</item>
+        <item>Steven Moore</item>
+    </string-array>
+
+    <string-array name="Experience">
+        <item>2 YEARS</item>
+        <item>5 YEARS</item>
+        <item>4 YEARS</item>
+        <item>3 YEARS</item>
+        <item>2 YEARS</item>
+    </string-array>
+
+    <string-array name="Ratings">
+        <item>****</item>
+        <item>***</item>
+        <item>****</item>
+        <item>*****</item>
+    </string-array>
+
+    <string-array name="Base_Charges">
+        <item>$55</item>
+        <item>$50</item>
+        <item>$45</item>
+        <item>$50</item>
+        <item>$44</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_success_screen">SuccessScreen</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_edit_profile_page">EditProfilePage</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_technician_login">TechnicianLogin</string>
+    <string name="title_activity_technician_home">TechnicianHome</string>
+    <string name="title_activity_technician_password_change">TechnicianPasswordChange</string>
+    <string name="title_activity_technician_forgot_password">TechnicianForgotPassword</string>
+    <string name="title_activity_base_fares">BaseFares</string>
+
+</resources>
