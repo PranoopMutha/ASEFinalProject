@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.findyourtechnician.TechnicianDetails"
+    tools:showIn="@layout/activity_technician_details"
+    android:background="@drawable/bgimage1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Employee details"
+        android:id="@+id/ContentTechnicianDetails_HeadingTextView"
+        android:textSize="25dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name : "
+        android:id="@+id/ContentTechnicianDetails_NameTextView"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/ContentTechnicianDetails_HeadingTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Experience : "
+        android:id="@+id/ContentTechnicianDetails_ExperienceTextView"
+        android:layout_below="@+id/ContentTechnicianDetails_NameTextView"
+        android:layout_alignLeft="@+id/ContentTechnicianDetails_NameTextView"
+        android:layout_alignStart="@+id/ContentTechnicianDetails_NameTextView"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Category : "
+        android:id="@+id/ContentTechnicianDetails_Category"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ContentTechnicianDetails_ExperienceTextView"
+        android:layout_alignLeft="@+id/ContentTechnicianDetails_ExperienceTextView"
+        android:layout_alignStart="@+id/ContentTechnicianDetails_ExperienceTextView"
+        android:textSize="18dp"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact Number : "
+        android:id="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ContentTechnicianDetails_Category"
+        android:layout_alignLeft="@+id/ContentTechnicianDetails_Category"
+        android:layout_alignStart="@+id/ContentTechnicianDetails_Category"
+        android:textSize="18dp"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email ID :"
+        android:id="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:layout_alignLeft="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:layout_alignStart="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minimum Cost for"
+        android:id="@+id/ContentTechnicianDetails_Cost1TextView"
+        android:layout_below="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_alignLeft="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_alignStart="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_marginTop="25dp"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="your given problem : "
+        android:id="@+id/ContentTechnicianDetails_Cost2TextView"
+        android:layout_below="@+id/ContentTechnicianDetails_Cost1TextView"
+        android:layout_alignLeft="@+id/ContentTechnicianDetails_Cost1TextView"
+        android:layout_alignStart="@+id/ContentTechnicianDetails_Cost1TextView"
+        android:textColor="#3e3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ContentTechnicianDetails_TechnicianName"
+        android:textSize="20dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_alignBottom="@+id/ContentTechnicianDetails_NameTextView"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_EmailTextView"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ContentTechnicianDetails_TechnicianExperience"
+        android:layout_above="@+id/ContentTechnicianDetails_Category"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_ExperienceTextView"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_ExperienceTextView"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ContentTechnicianDetails_TechnicianCategory"
+        android:layout_above="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_Category"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_Category"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ContentTechnicianDetails_TechnicianPhoneNumber"
+        android:layout_above="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:phoneNumber="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ContentTechnicianDetails_TechnicianEmail"
+        android:layout_above="@+id/ContentTechnicianDetails_Cost1TextView"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_Category"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_Category"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ContentTechnicianDetails_TechnicianCost"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/ContentTechnicianDetails_Cost2TextView"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_Cost2TextView"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_Cost2TextView" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/DialButton"
+        android:src="@android:drawable/sym_action_call"
+        android:onClick="CallTechnician"
+        android:layout_alignTop="@+id/ContentTechnicianDetails_TechnicianPhoneNumber"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_ContactNumberTextView"
+        android:layout_toLeftOf="@+id/ContentTechnicianDetails_Feedback" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:id="@+id/ContentTechnicianDetails_Feedback"
+        android:onClick="Feedback"
+        android:layout_below="@+id/ContentTechnicianDetails_TechnicianCost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#c06322"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hire Employee"
+        android:id="@+id/HireEmployee"
+        android:onClick="Feedback"
+        android:layout_below="@+id/ContentTechnicianDetails_TechnicianCost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#c06322"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:src="@drawable/bob_show"
+        android:layout_toEndOf="@+id/ContentTechnicianDetails_Feedback"
+        android:layout_toRightOf="@+id/ContentTechnicianDetails_Feedback"
+        android:layout_alignTop="@+id/ContentTechnicianDetails_Feedback" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="-2dp"
+        android:id="@+id/imageView14"
+        android:src="@drawable/fyelogo"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="sign Out"
+        android:id="@+id/UserSignOut"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#c03622"
+        android:onClick="SignOut"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CallTechnician"
+        android:src="@android:drawable/sym_action_call"
+        android:layout_above="@+id/ContentTechnicianDetails_EmailTextView"
+        android:layout_alignRight="@+id/imageView10"
+        android:layout_alignEnd="@+id/imageView10"
+        android:onClick="CallTechnician" />
+
+
+
+</RelativeLayout>
