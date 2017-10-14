@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.findyourtechnician.BaseFares"
+    tools:showIn="@layout/activity_base_fares"
+    android:background="@drawable/bgimage1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Base Fares for the below Problems"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Developing"
+        android:id="@+id/SubCategory1"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Testing"
+        android:id="@+id/SubCategory2"
+        android:layout_below="@+id/SubCategory1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Team Lead"
+        android:id="@+id/SubCategory3"
+        android:layout_below="@+id/SubCategory2"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Support Member"
+        android:id="@+id/SubCategory4"
+        android:layout_below="@+id/SubCategory3"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minimum Base Fire"
+        android:id="@+id/Minimum"
+        android:layout_below="@+id/SubCategory4"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView22"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="for any work:"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/Minimum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView26"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/Minimum"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/Minimum"
+        android:layout_toEndOf="@+id/Minimum" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFareMinimum"
+        android:layout_marginTop="316dp"
+        android:layout_toRightOf="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare1"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toRightOf="@+id/textView22"
+        android:layout_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/SubCategory1"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/SubCategoryFare1"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare2"
+        android:layout_marginBottom="-7dp"
+
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView28"
+        android:textColor="#000000"
+        android:layout_below="@+id/SubCategory2"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare3"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_toRightOf="@+id/textView28"
+        android:layout_toEndOf="@+id/textView28" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView29"
+        android:textColor="#000000"
+        android:layout_marginLeft="170dp"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/SubCategory3"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare4"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:id="@+id/imageView14"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fyelogo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:id="@+id/BaseFareContent_RegisterButton"
+        android:layout_marginTop="36dp"
+        android:background="#c0392b"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/SubCategoryFareMinimum"
+        android:layout_centerHorizontal="true"
+        android:onClick="Register" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:layout_toRightOf="@+id/BaseFareContent_RegisterButton"
+        android:layout_toEndOf="@+id/BaseFareContent_RegisterButton"
+        android:src="@drawable/employee"
+        android:layout_below="@+id/SubCategoryFareMinimum" />
+
+</RelativeLayout>
