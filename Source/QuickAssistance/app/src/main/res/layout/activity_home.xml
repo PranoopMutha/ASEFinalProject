@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.knowledge.quickassistance.Home"
+    android:background="@drawable/background">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:id="@+id/LocationSearch"
+        android:textColorHint="#4FC3F7"
+        android:textColor="#4FC3F7"
+        android:hint="Type your zipcode to search" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:layout_marginTop="150dp"
+        android:textColor="#B3E5FC"
+        android:background="@drawable/background_color"
+        android:alpha="0.5"
+        android:id="@+id/EngineersList"
+        android:layout_weight="1" />
+    <Button
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Edit Profile"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:id="@+id/HomeEditProfileButton"
+        android:onClick="EditProfile" />
+    <ImageView
+        android:src="@drawable/icon"
+        android:layout_width="80dp"
+        android:layout_height="50dp" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Log Out"
+        android:id="@+id/ContentHomeSignOutButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/mybutton"
+        android:onClick="SignOut" />
+
+</RelativeLayout>

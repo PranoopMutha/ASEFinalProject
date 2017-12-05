@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">QuickAssistance</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_login">QuickAssistant</string>
+    <string name="title_activity_user_registration">UserRegistration</string>
+    <string name="title_activity_engineer_profile_registration">EngineerProfileRegistration
+    </string>
+    <string-array name="engineers">
+        <item>Front End Developer</item>
+        <item>Back End Developer</item>
+        <item>Full Stack Developer</item>
+        <item>Test Engineer</item>
+        <item>System Engineer</item>
+    </string-array>
+    <string-array name="engineerDescriptions">
+        <item>This is Front End Developer</item>
+        <item>This is Back End Developer</item>
+        <item>This is Full Stack Developer</item>
+        <item>This is Test Engineer</item>
+    </string-array>
+    <string name="title_activity_engineer_details">EngineerDetails</string>
+    <string name="title_activity_sub_category_page">SubCategoryPage</string>
+    <string-array name="FrontEnd_SubCategory">
+        <item>Front End - Angular JS</item>
+        <item>Front End - Node JS</item>
+        <item>Front End - JavaScript</item>
+        <item>UI Developer - CSS</item>
+        <item>UI Developer - HTML</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="BackEnd_SubCategory">
+        <item>SQL DB</item>
+        <item>Mongo DB</item>
+        <item>Python Django</item>
+        <item>FireBase DB</item>
+        <item>Oracle DB</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="FullStack_SubCategory">
+        <item>Angular JS/HTML/CSS/BootStrap/SQL DB</item>
+        <item>Angular JS/HTML/CSS/BootStrap/Mongo DB</item>
+        <item>Angular JS/HTML/CSS/BootStrap/Oracle DB</item>
+        <item>Angular JS/HTML/CSS/BootStrap/FireBaseDB</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="Tester_SubCategory">
+        <item>Portability Testing Testing</item>
+        <item>Database Integrity Testing</item>
+        <item>Functional Testing</item>
+        <item>Usability Painting</item>
+        <item>GUI Testing</item>
+        <item>Configuration and Deployment Testing</item>
+        <item>Regression Testing</item>
+        <item>Performance Testing</item>
+        <item>Other</item>
+    </string-array>
+    <!--<string-array name="Plumber_SubCategory">
+        <item>Tap Repair</item>
+        <item>Sink Repair</item>
+        <item>Pipeline Repair</item>
+        <item>Accessories Fitting</item>
+        <item>Other</item>
+    </string-array>-->
+    <string name="title_activity_engineer_experience_registration">
+        engineer_experience_registration
+    </string>
+    <string name="title_activity_engineer_registration_step2">engineer_registration_step2
+    </string>
+    <string name="title_activity_engineer_list">engineer_list</string>
+    <string name="title_activity_engineer_profile_registration2">
+        engineer_profile_registration2
+    </string>
+    <string-array name="Engineer_names">
+        <item>John Doe</item>
+        <item>Mark Phillips</item>
+        <item>Kevin Parker</item>
+        <item>Jeff Adams</item>
+        <item>Steven Moore</item>
+    </string-array>
+
+    <string-array name="Experience">
+        <item>2 YEARS</item>
+        <item>5 YEARS</item>
+        <item>4 YEARS</item>
+        <item>3 YEARS</item>
+        <item>2 YEARS</item>
+    </string-array>
+
+    <string-array name="Ratings">
+        <item>****</item>
+        <item>***</item>
+        <item>****</item>
+        <item>*****</item>
+    </string-array>
+
+    <string-array name="Base_Charges">
+        <item>$55</item>
+        <item>$50</item>
+        <item>$45</item>
+        <item>$50</item>
+        <item>$44</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_success_screen">SuccessScreen</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_edit_profile_page">EditProfilePage</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_engineer_login">EngineerLogin</string>
+    <string name="title_activity_engineer_home">EngineerHome</string>
+    <string name="title_activity_engineer_password_change">EngineerPasswordChange</string>
+    <string name="title_activity_engineer_forgot_password">EngineerForgotPassword</string>
+    <string name="title_activity_base_fares">BaseFares</string>
+
+</resources>

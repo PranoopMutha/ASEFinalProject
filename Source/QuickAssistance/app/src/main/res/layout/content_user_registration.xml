@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knowledge.quickassistance.UserRegistration"
+    tools:showIn="@layout/activity_user_registration"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/LoginContent_RegistrationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="User Registration"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#B3E5FC"
+        android:textColorHighlight="#111cea"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First name"
+        android:id="@+id/LoginContent_FirstNameTextView"
+        android:layout_below="@+id/LoginContent_RegistrationTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Name"
+        android:id="@+id/LoginContent_LastNameTextView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LoginContent_FirstNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email id"
+        android:id="@+id/LoginContent_EmailidTextView"
+        android:layout_below="@+id/LoginContent_LastNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact"
+        android:id="@+id/LoginContent_ContactTextView"
+        android:layout_below="@+id/LoginContent_EmailidTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Username"
+        android:id="@+id/LoginContent_UserNameTextView"
+        android:layout_below="@+id/LoginContent_ContactTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/LoginContent_PasswordTextView"
+        android:layout_below="@+id/LoginContent_UserNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Confirm Password"
+        android:id="@+id/LoginContent_ConfirmPasswordTextView"
+        android:layout_below="@+id/LoginContent_PasswordTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#B3E5FC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_FirstNameTextField"
+        android:layout_below="@+id/LoginContent_RegistrationTextView"
+        android:layout_toRightOf="@+id/LoginContent_ConfirmPasswordTextView"
+        android:layout_toEndOf="@+id/LoginContent_ConfirmPasswordTextView"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_LastNameTextField"
+        android:layout_below="@+id/LoginContent_FirstNameTextView"
+        android:layout_alignLeft="@+id/LoginContent_FirstNameTextField"
+        android:layout_alignStart="@+id/LoginContent_FirstNameTextField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_EmailidTextField"
+        android:layout_below="@+id/LoginContent_LastNameTextView"
+        android:layout_alignLeft="@+id/LoginContent_LastNameTextField"
+        android:layout_alignStart="@+id/LoginContent_LastNameTextField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_ContactTextField"
+        android:layout_below="@+id/LoginContent_EmailidTextField"
+        android:layout_alignRight="@+id/LoginContent_EmailidTextField"
+        android:layout_alignEnd="@+id/LoginContent_EmailidTextField"
+        android:layout_alignLeft="@+id/LoginContent_EmailidTextField"
+        android:layout_alignStart="@+id/LoginContent_EmailidTextField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_PasswordTextField"
+        android:layout_below="@+id/LoginContent_UserNameTextView"
+        android:layout_alignLeft="@+id/LoginContent_ContactTextField"
+        android:layout_alignStart="@+id/LoginContent_ContactTextField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_UserNameTextField"
+        android:layout_below="@+id/LoginContent_ContactTextView"
+        android:layout_alignLeft="@+id/LoginContent_ContactTextField"
+        android:layout_alignStart="@+id/LoginContent_ContactTextField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#4FC3F7"
+        android:ems="10"
+        android:id="@+id/LoginContent_ConfirmPasswordTextField"
+        android:layout_below="@+id/LoginContent_PasswordTextField"
+        android:layout_alignRight="@+id/LoginContent_PasswordTextField"
+        android:layout_alignEnd="@+id/LoginContent_PasswordTextField"
+        android:layout_toRightOf="@+id/LoginContent_ConfirmPasswordTextView"
+        android:layout_toEndOf="@+id/LoginContent_ConfirmPasswordTextView" />
+
+    <Button
+        android:id="@+id/LoginContent_RegisterButton"
+        android:layout_width="245dp"
+        android:layout_height="34dp"
+        android:layout_alignEnd="@+id/LoginContent_RegistrationTextView"
+        android:layout_alignLeft="@+id/LoginContent_RegistrationTextView"
+        android:layout_alignRight="@+id/LoginContent_RegistrationTextView"
+        android:layout_alignStart="@+id/LoginContent_RegistrationTextView"
+        android:layout_below="@+id/LoginContent_ConfirmPasswordTextField"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="Register"
+        android:text="Register" />
+
+</RelativeLayout>

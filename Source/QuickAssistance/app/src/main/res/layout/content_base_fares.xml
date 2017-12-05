@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knowledge.quickassistance.BaseFares"
+    tools:showIn="@layout/activity_base_fares"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Expected Salary for the below Technologies"
+        android:textColor="#B3E5FC"
+        android:id="@+id/textView11"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/SubCategoryFare1"
+        android:layout_toEndOf="@+id/SubCategoryOne"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/SubCategoryOne"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/SubCategoryTwo"
+        android:layout_below="@+id/SubCategoryOne"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="      "
+        android:id="@+id/SubCategoryThree"
+        android:layout_below="@+id/SubCategoryTwo"
+        android:layout_marginTop="25dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/SubCategoryFour"
+        android:layout_below="@+id/SubCategoryThree"
+        android:layout_marginTop="25dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minimum Expected Salary"
+        android:id="@+id/Minimum"
+        android:layout_below="@+id/SubCategoryFour"
+        android:layout_marginTop="25dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView22"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#B3E5FC"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Your previous Project Descricption"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/Minimum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#B3E5FC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFareMinimum"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/textView24"
+        android:layout_toEndOf="@+id/SubCategoryThree" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare1"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toRightOf="@+id/textView22"
+        android:layout_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/SubCategoryOne"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/SubCategoryFare1"
+        android:textColor="#B3E5FC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare2"
+        android:layout_marginBottom="-7dp"
+
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView28"
+        android:textColor="#B3E5FC"
+        android:layout_below="@+id/SubCategoryTwo"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare3"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_toRightOf="@+id/textView28"
+        android:layout_toEndOf="@+id/textView28" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView29"
+        android:textColor="#B3E5FC"
+        android:layout_marginLeft="170dp"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/SubCategoryThree"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/SubCategoryFare4"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <Button
+        android:layout_width="245dp"
+        android:layout_height="34dp"
+        android:text="REGISTER"
+        android:id="@+id/BaseFareContent_RegisterButton"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="Register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#4FC3F7"
+        android:layout_alignEnd="@+id/textView24"
+        android:layout_toEndOf="@+id/SubCategoryThree" />
+
+</RelativeLayout>

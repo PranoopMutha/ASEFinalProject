@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knowledge.quickassistance.EngineerDetail"
+    tools:showIn="@layout/activity_engineer_detail"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Engineer's Profile"
+        android:textColor="#B3E5FC"
+        android:id="@+id/ContentEngineerDetails_HeadingTextView"
+        android:textSize="25dp"
+        android:layout_marginLeft="63dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name : "
+        android:id="@+id/ContentEngineerDetails_NameTextView"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/ContentEngineerDetails_HeadingTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Experience : "
+        android:id="@+id/ContentEngineerDetails_ExperienceTextView"
+        android:layout_below="@+id/ContentEngineerDetails_NameTextView"
+        android:layout_alignLeft="@+id/ContentEngineerDetails_NameTextView"
+        android:layout_alignStart="@+id/ContentEngineerDetails_NameTextView"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Technology : "
+        android:id="@+id/ContentEngineerDetails_Category"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ContentEngineerDetails_ExperienceTextView"
+        android:layout_alignLeft="@+id/ContentEngineerDetails_ExperienceTextView"
+        android:layout_alignStart="@+id/ContentEngineerDetails_ExperienceTextView"
+        android:textSize="18dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact Number : "
+        android:id="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ContentEngineerDetails_Category"
+        android:layout_alignLeft="@+id/ContentEngineerDetails_Category"
+        android:layout_alignStart="@+id/ContentEngineerDetails_Category"
+        android:textSize="18dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email ID :"
+        android:id="@+id/ContentEngineerDetails_EmailTextView"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:layout_alignLeft="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:layout_alignStart="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Previous project description :"
+        android:id="@+id/ContentEngineerDetails_Cost1TextView"
+        android:layout_below="@+id/ContentEngineerDetails_EmailTextView"
+        android:layout_alignLeft="@+id/ContentEngineerDetails_EmailTextView"
+        android:layout_alignStart="@+id/ContentEngineerDetails_EmailTextView"
+        android:layout_marginTop="25dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ContentEngineerDetails_TechnicianName"
+        android:textSize="20dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_alignBottom="@+id/ContentEngineerDetails_NameTextView"
+        android:layout_toRightOf="@+id/ContentEngineerDetails_EmailTextView"
+        android:layout_toEndOf="@+id/ContentEngineerDetails_EmailTextView"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ContentEngineerDetails_EngineerExperience"
+        android:layout_above="@+id/ContentEngineerDetails_Category"
+        android:layout_toRightOf="@+id/ContentEngineerDetails_ExperienceTextView"
+        android:layout_toEndOf="@+id/ContentEngineerDetails_ExperienceTextView"
+        android:textColor="#B3E5FC"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ContentTechnicianDetails_TechnicianCategory"
+        android:layout_above="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:layout_toRightOf="@+id/ContentEngineerDetails_Category"
+        android:layout_toEndOf="@+id/ContentEngineerDetails_Category"
+        android:textSize="20dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ContentEngineerDetails_EngineerPhoneNumber"
+        android:layout_above="@+id/ContentEngineerDetails_EmailTextView"
+        android:layout_toRightOf="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:layout_toEndOf="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:textSize="20dp"
+        android:textColor="#B3E5FC"
+        android:phoneNumber="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ContentEngineerDetails_EngineerEmail"
+        android:layout_above="@+id/ContentEngineerDetails_Cost1TextView"
+        android:layout_toRightOf="@+id/ContentEngineerDetails_Category"
+        android:layout_toEndOf="@+id/ContentEngineerDetails_Category"
+        android:textSize="20dp"
+        android:textColor="#B3E5FC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ContentEngineerDetails_EngineerCost"
+        android:textColor="#B3E5FC"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/ContentEngineerDetails_EngineerEmail" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/DialButton"
+        android:onClick="callEngineer"
+        android:layout_alignTop="@+id/ContentEngineerDetails_EngineerPhoneNumber"
+        android:layout_toRightOf="@+id/ContentEngineerDetails_ContactNumberTextView"
+        android:layout_toLeftOf="@+id/ContentEngineerDetails_Feedback" />
+
+    <Button
+        android:id="@+id/ContentEngineerDetails_Feedback"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/mybutton"
+        android:onClick="Feedback"
+        android:text="Leave Feedback"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ContentEngineerDetails_Cost1TextView"
+        android:layout_alignEnd="@+id/ContentTechnicianDetails_TechnicianCategory" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="-2dp"
+        android:id="@+id/imageView14"
+        android:src="@drawable/icon"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Log Out"
+        android:id="@+id/UserSignOut"
+        android:background="@drawable/mybutton"
+        android:onClick="SignOut"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ContentEngineerDetails_HeadingTextView" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/mybutton"
+        android:text="Send Email"
+        android:id="@+id/CallEngineer"
+        android:onClick="callEngineer"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ContentEngineerDetails_Cost1TextView"
+        android:layout_below="@+id/ContentEngineerDetails_Cost1TextView"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="#4FC3F7"
+        android:inputType="textLongMessage"
+        android:text="Developed website using AngularJS"
+        android:layout_toStartOf="@+id/CallEngineer" />
+
+</RelativeLayout>

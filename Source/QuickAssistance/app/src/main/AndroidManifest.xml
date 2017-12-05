@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.knowledge.quickassistance">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserRegistration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EngineerProfileRegistration" />
+        <activity android:name=".EngineerLogin" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".BaseFares" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".EngineerList" />
+        <activity android:name=".Home" />
+        <activity android:name=".SubCategory" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".EngineerPasswordChange" />
+        <activity android:name=".EngineerDetail" />
+        <activity android:name=".EngineerForgotPassword" />
+        <activity android:name=".SuccessScreen" />
+        <activity android:name=".EngineerHome"></activity>
+    </application>
+
+</manifest>

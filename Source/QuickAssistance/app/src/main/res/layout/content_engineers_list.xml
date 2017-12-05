@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knowledge.quickassistance.EngineerList"
+    tools:showIn="@layout/activity_engineers_list"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Engineer Details List"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="105dp"
+        android:textColor="#B3E5FC"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/EngineerSignOut"
+        android:layout_alignBottom="@+id/EngineerSignOut"
+        android:layout_toStartOf="@+id/EngineerSignOut"
+        android:layout_marginEnd="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/textView4"
+        android:id="@+id/HeaderLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="            Name"
+            android:id="@+id/Engineer_List_Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#B3E5FC"
+            android:layout_below="@+id/textView21" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:textColor="#4FC3F7"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Engineer_List_Name"
+            android:layout_toEndOf="@+id/Engineer_List_Name"
+            android:text="          " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Experience"
+            android:id="@+id/Engineer_List_Experience"
+            android:layout_toRightOf="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21"
+            android:layout_alignParentBottom="true"
+            android:textColor="#B3E5FC"
+            android:layout_below="@+id/textView23" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4FC3F7"
+            android:text="          "
+            android:id="@+id/textView23"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Engineer_List_Experience"
+            android:layout_toEndOf="@+id/Engineer_List_Experience" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Rating"
+            android:id="@+id/Engineer_List_BaseFare"
+            android:layout_toEndOf="@+id/Engineer_List_Experience"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView25"
+            android:textColor="#B3E5FC"
+            android:layout_toRightOf="@+id/Engineer_List_Experience" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4FC3F7"
+            android:text="          "
+            android:id="@+id/textView25"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Engineer_List_BaseFare"
+            android:layout_toEndOf="@+id/Engineer_List_BaseFare" />
+
+        <TextView
+            android:id="@+id/Engineer_List_Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="#B3E5FC"
+            android:layout_below="@+id/textView25"
+            android:layout_marginEnd="15dp"
+            android:text="Expected Sal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4FC3F7"
+            android:text="                           "
+            android:id="@+id/textView20"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Engineer_List_Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EngineerListView"
+        android:background="@drawable/background_color"
+        android:alpha="0.5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/HeaderLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/CategorytextView"
+        android:layout_marginTop="20dp"
+        android:textColor="#4FC3F7"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=">"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/CategorytextView"
+        android:layout_toRightOf="@+id/CategorytextView"
+        android:layout_toEndOf="@+id/CategorytextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/SubCategorytextView"
+        android:layout_alignBottom="@+id/textView4"
+        android:textColor="#4FC3F7"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/EngineerSignOut"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton"
+        android:onClick="SignOut"
+        android:text="Log Out" />
+
+</RelativeLayout>
